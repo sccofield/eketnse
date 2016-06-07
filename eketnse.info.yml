@@ -1,0 +1,35 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: 'Eket NSE'
+description: 'A bootstrap theme developed for Eket NSe'
+package: 'Bootstrap'
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header_right: 'Header right'
+  header_left: 'Header left'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  section_one: 'Section one (front page)'
+  section_two: 'Section two (front page)'
+  section_three: 'Section three (front page)'
+  section_four: 'Section four (front page)'
+  shortinfo_first: 'Short info first (front page)'
+  shortinfo_second: 'Short info second (front page)'
+  shortinfo_third: 'Short info third (front page)'
+  footer_one: 'Footer one'
+  footer_two: 'Footer two'
+  footer_three: 'Footer three'
+  footer: 'Footer'
+  jumbotron: 'jumbotron'
+
+libraries:
+  - 'eketnse/global-styling'
