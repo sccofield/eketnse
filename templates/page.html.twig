@@ -1,0 +1,120 @@
+<div class="container">
+  <div class="above header">
+    <div class="green"></div>
+    <div class="yellow"></div>
+    <div class="row main_header">
+
+      <div class="col-md-9 col-sm-9 col-xs-9 col-lg-9">
+        <img class="img" src="/eketnse/themes/eketnse/img/nselogo.png">
+      </div>
+
+      <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3">
+        <form action="get" class="left">
+
+
+          <input type ="text"name="search" placeholder="search">
+
+        </form>
+
+      </div>
+    </div>
+    <div class="yellow"></div>
+    <div class="green"></div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="container">
+  <nav class="navbar">
+    <div class="container-fluid">
+      {{ page.navigation }}
+    </div>
+  </nav>
+</div>
+
+
+<div class="container main_content">
+  <div class="row">
+    <div class="col-md-8 page_content">
+      {# Header #}
+      {% if page.header %}
+        {% block header %}
+          <div class="col-sm-12" role="heading">
+            {{ page.header }}
+          </div>
+        {% endblock %}
+      {% endif %}
+
+      {# Highlighted #}
+      {% if page.highlighted %}
+        {% block highlighted %}
+          <div class="highlighted">{{ page.highlighted }}</div>
+        {% endblock %}
+      {% endif %}
+
+      {# Breadcrumbs #}
+      {% if breadcrumb %}
+        {% block breadcrumb %}
+          {{ breadcrumb }}
+        {% endblock %}
+      {% endif %}
+
+      {# Action Links #}
+      {% if action_links %}
+        {% block action_links %}
+          <ul class="action-links">{{ action_links }}</ul>
+        {% endblock %}
+      {% endif %}
+
+      {# Help #}
+      {% if page.help %}
+        {% block help %}
+          {{ page.help }}
+        {% endblock %}
+      {% endif %}
+
+      {# Content #}
+      {% block content %}
+        <a id="main-content"></a>
+        {{ page.content }}
+      {% endblock %}
+    </div>
+
+
+
+
+
+    <div class="col-md-4 page_sidebar">
+      {{ page.sidebar_second }}
+
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="container">
+    <footer>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+          {{ page.footer_one }}
+
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+          {{ page.footer_two }}
+
+
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+          {{ page.footer_three }}
+
+        </div>
+      </div>
+
+
+    </footer>
+  </div>
+</div>

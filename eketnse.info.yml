@@ -22,6 +22,8 @@ regions:
   section_two: 'Section two (front page)'
   section_three: 'Section three (front page)'
   section_four: 'Section four (front page)'
+  section_five: 'Section five (front page)'
+  section_six: 'Section six (front page)'
   shortinfo_first: 'Short info first (front page)'
   shortinfo_second: 'Short info second (front page)'
   shortinfo_third: 'Short info third (front page)'

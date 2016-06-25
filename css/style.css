@@ -116,13 +116,13 @@ body {
 	
 }
 
-.thumbnail > img{
+.thumbnail > img {
 	display: block;
-max-width: 100%;
-height: 150px;
+	max-width: 100%;
+	height: 150px;
 }
 
-.img{
+.img {
 	height: 100%;
 	width: 100%;
 	padding: 0px;
@@ -149,7 +149,7 @@ height: 150px;
 
 .short-info1{
 	height: auto;
-	width:100%;
+	/*width:100%;*/
     text-align: center;
 	padding:50px;
 	background:url(../img/slide4.jpg) fixed center center;
@@ -190,6 +190,7 @@ footer{
 	color:#fff;
 	padding:30px;
 	border-radius:4px;
+	margin-top: -20px;
 }
 
 footer li{
@@ -197,4 +198,44 @@ footer li{
 	list-style:none;
 	float:left;
 	padding:10px;
+
+}
+
+.news-header {
+	line-height: 1.8rem;
+	background-color: aliceblue;
+	padding: 10px;
+	margin-top: 0px;
+}
+.news-header a {
+	font-size: 20px;
+}
+
+.news-galore {
+	border: #F0F8FF 1px solid;
+	/*max-height: 200px;*/
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+.news-galore p {
+	padding: 10px;
+}
+
+.news-galore img {
+	padding: 10px;
+}
+
+.main_content {
+	background-color: #F5F5F5;
+}
+
+.page_content {
+	padding: 0 40px;
+}
+
+.region-sidebar-second {
+	border: none;
+	border-left: 1px solid #cee;
+	border-radius: 0px;
 }
