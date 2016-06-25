@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:32f69aca-ebc6-4e56-a627-33897b13204a'
+  module:
+    - block_content
+  theme:
+    - eketnse
+id: exams
+theme: eketnse
+region: section_three
+weight: -11
+provider: null
+plugin: 'block_content:32f69aca-ebc6-4e56-a627-33897b13204a'
+settings:
+  id: 'block_content:32f69aca-ebc6-4e56-a627-33897b13204a'
+  label: exams
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

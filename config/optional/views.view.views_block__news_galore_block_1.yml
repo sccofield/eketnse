@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_galore
+  module:
+    - views
+  theme:
+    - eketnse
+id: views_block__news_galore_block_1
+theme: eketnse
+region: section_two
+weight: -11
+provider: null
+plugin: 'views_block:news_galore-block_1'
+settings:
+  id: 'views_block:news_galore-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

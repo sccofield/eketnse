@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.advert
+  module:
+    - views
+  theme:
+    - eketnse
+id: views_block__advert_block_1
+theme: eketnse
+region: section_four
+weight: -11
+provider: null
+plugin: 'views_block:advert-block_1'
+settings:
+  id: 'views_block:advert-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

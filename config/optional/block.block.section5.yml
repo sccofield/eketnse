@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ce71dec8-146d-45af-9a73-2d417a48c646'
+  module:
+    - block_content
+  theme:
+    - eketnse
+id: section5
+theme: eketnse
+region: section_five
+weight: -10
+provider: null
+plugin: 'block_content:ce71dec8-146d-45af-9a73-2d417a48c646'
+settings:
+  id: 'block_content:ce71dec8-146d-45af-9a73-2d417a48c646'
+  label: 'Section 5'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
