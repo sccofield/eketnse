@@ -1,0 +1,37 @@
+<?php
+
+use Drupal\block\Entity\Block;
+use Drupal\block_content\Entity\BlockContent;
+
+/**
+ * Implements hook_install().
+ */
+function eketnse_install() {
+  $custom_blocks = [
+    'eketnse_account_menu',
+  ];
+
+  foreach ($custom_blocks as $custom_block) {
+    eketnse_import_custom_block($custom_block);
+  }
+}
+
+function eketnse_import_custom_block($block_name, $block_label = NULL) {
+  $block = Block::load($block_name);
+  if ($block_label === NULL) {
+    $block_label = $block->label();
+  }
+
+  $block_html_body = file(__DIR__ . '/custom_blocks/custom_block.' . $block_name . '.html', 'r');
+
+  $block_content = BlockContent::create([
+    'type' => 'basic',
+    'info' => $block_label,
+  ]);
+  $block_content->set('body', $block_html_body);
+  $block_content->save();
+
+  $block->plugin = 'block_content:' . $block_content->uuid();
+  $block->settings['id'] = $block->plugin;
+  $block->save();
+}
